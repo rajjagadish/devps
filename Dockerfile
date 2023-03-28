@@ -12,7 +12,7 @@ RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .
 RUN rm -rf photogenic photogenic.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80 9000
+EXPOSE 80 900
 
 # FROM  centos:latest
 # MAINTAINER vikashashoke@gmail.com
@@ -25,4 +25,4 @@ EXPOSE 80 9000
 #  RUN cp -rvf shine/* .
 #  RUN rm -rf shine shine.zip
 #  CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-#  EXPOSE 80 9000
+#  EXPOSE 80 900
